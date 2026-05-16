@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Makrand Khanwale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.68.3" /><meta property="og:site_name" content="Makrand Khanwale">
+  <meta property="og:title" content="Makrand Khanwale">
+  <meta property="og:description" content="Site about work of Makrand Khanwale.">
+  <meta property="description" content="Site about work of Makrand Khanwale.">
+  <meta property="og:url" content="https://makrandak.github.io/">
+  <meta property="og:type" content="website">
+  
+    <meta property="og:image" content="https://makrandak.github.io/img/main/IMG_5171c.jpg">
+  
+  <link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+  <div id="theme-message" style="background-color:#3c3b3b;color:#f4f4f4;margin:auto auto;padding:.25em 2em;width:75%;">
+    <p style="text-align:center;">This message, related to the development of the theme, only displays on the
+      <code>localhost</code> homepage to notify you of any important theme changes.</p>
+      <hr>
+      <h5 style="color:#f4f4f4;text-align:center;"><i class="fas fa-exclamation-triangle"></i>Version 2.0.0 - July 20, 2020<i class="fas fa-exclamation-triangle"></i></h5>
+    <p>Below are the following changes that <em>could</em> be breaking changes for your site. For more details on any change, please refer to <a href="https://github.com/pacollins/hugo-future-imperfect-slim/pull/154">PR #154</a>.</p>
+<p>The major breaking change is:</p>
+<ol>
+<li>Users that have front matter that utilize <code>images</code> (backwards compatibility for <code>featured</code> and associated parameters still remains) <em>will</em> need to adjust from <code>[images]=&quot;SRC&quot;</code> to the new format.</li>
+</ol>
+<pre><code>[[images]]
+    src = &quot;&quot; // Link to image
+    alt = &quot;&quot; // Alt text for image
+    stretch = // Optional: See screenshots for referenced values and outcomes
+</code></pre><p>If you utilize any of the following, there <em>might</em> be a breaking:</p>
+<ol>
+<li>User custom templates <em>may</em> require adjustment.</li>
+<li>User custom i18n languages, or custom templates referencing i18n translations <em>may</em> require adjustment.</li>
+<li>User custom template for comments <em>will</em> require adjustment <em>if</em> it uses the theme&rsquo;s CSS and/or JS.</li>
+<li>User custom CSS <em>may</em> need to adjust due to a variety of class name changes and specificity changes.</li>
+</ol>
+<p>While I realize this is inconvenient, I hope that it is worth it to you in the long run. Thanks for using the theme, and feel free to submit issues as needed.</p>
+
+    <div style="text-align:center;">
+      <button onclick="removeBox()" class="button" style="color:#f4f4f4;margin-bottom:1em;">Close Notification Until Next Update</button>
+    </div>
+    <script>
+      if (window.location.href.indexOf('localhost:') < 1 || window.localStorage.getItem('HFIS-version') == '2.0.0') {
+        document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
+      }
+      function removeBox() {
+        window.localStorage.setItem('HFIS-version', '2.0.0');
+        document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
+      }
+    </script>
+  </div>
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Makrand Khanwale
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> About</a>
+        
+      
+        
+          
+          <a href="/research/" class="nav link"><i class='far fa-id-card'></i> Research</a>
+        
+      
+        
+          
+          <a href="/experience/" class="nav link"><i class='far fa-id-card'></i> Experience</a>
+        
+      
+        
+          
+          <a href="/publications/" class="nav link"><i class='far fa-id-card'></i> Publications</a>
+        
+      
+        
+          
+          <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmakrandak.github.io%2f&amp;title=Makrand%20Khanwale" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fmakrandak.github.io%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://makrandak.github.io/img/main/IMG_5171c.jpg" width="400" alt="Hugo Future Imperfect Slim" /></a>
+  <header>
+    <h1>Makrand A. Khanwale</h1>
+  </header>
+  <main>
+    <p>Assistant Professor of Computational Fluid Dynamics (starting May 2026), <br>Technische Universität München</p>
+  </main>
+  
+</section>
+
+      <main id="site-main">
+        
+  
+    <article class="post">
+      <header>
+        <h1>Brief biography</h1>
+      </header>
+      <div class="content">
+        <p>On May 1st, 2026, I will join the Technical University of Munich as Assistant Professor of Computational Fluid Dynamics in the School of Engineering and Design. My research focuses on developing computational and mathematical tools for understanding multiscale multiphysics fluid dynamical systems, with applications in energy technologies, aerospace flows, sustainable transport, hydrogen production, and environmental processes.</p>
+<p>Building on foundations in numerical analysis, multiphysics modeling, and high-performance computing, our research group will develop predictive simulation tools for multiphase and turbulent flows across a wide range of spatial and temporal scales.</p>
+<p>I am currently a Physical Science Research Scientist in the Department of Mechanical Engineering at Stanford University, where I work with <a href="https://profiles.stanford.edu/ali-mani">Prof. Ali Mani</a> and <a href="https://profiles.stanford.edu/gianluca-iaccarino">Prof. Gianluca Iaccarino</a>. My work focuses on high-fidelity simulation of turbulence and multiphase flows, including the development of reduced-order turbulence models and computational frameworks for multiphase electrochemical and energy systems. I am also involved in modeling compressible multiphase flows for the <a href="https://insieme.stanford.edu/">INSIEME</a> project under the <a href="https://psaap.llnl.gov/">PSAAP III</a> program.</p>
+<p>I received my PhD from Iowa State University, with a co-major in Mechanical Engineering and Applied Mathematics, under the supervision of <a href="https://www.me.iastate.edu/faculty/profile/baskarg/">Prof. Baskar Ganapathysubramanian</a> and <a href="https://faculty.sites.iastate.edu/rossmani/">Prof. James Rossmanith</a>. My doctoral research focused on developing energy-stable numerical methods for multiphase flows governed by the Cahn-Hilliard Navier-Stokes equations, and scalable computational tools for simulating complex interfacial dynamics.</p>
+<hr>
+<h3 id="education">Education</h3>
+<h4 id="iowa-state-university-ames-iowa">Iowa State University, Ames, Iowa</h4>
+<ul>
+<li>
+<p>PhD, Mechanical Engineering and Applied Mathematics  [Aug 2016 – Aug 2021]</p>
+<p><strong>Dissertation</strong>: Energy-stable numerical methods for interface-resolved simulations of two-phase flows using the Cahn-Hilliard Navier-Stokes equations<br>
+<strong>Graduate advisors</strong>: <a href="https://www.me.iastate.edu/faculty/profile/baskarg/">Prof. Baskar Ganapathysubramanian</a> and <a href="https://faculty.sites.iastate.edu/rossmani/">Prof. James Rossmanith</a></p>
+</li>
+</ul>
+<h4 id="institute-of-chemical-technology-mumbai-india">Institute of Chemical Technology, Mumbai, India</h4>
+<ul>
+<li>Bachelor of Technology in Chemical Technology  [2011 – 2015]</li>
+</ul>
+<hr>
+<h3 id="research-interests">Research Interests</h3>
+<ul>
+<li>Multiphase flows</li>
+<li>Numerical analysis</li>
+<li>Computational fluid dynamics</li>
+<li>Turbulence</li>
+<li>Multi-scale computational modeling</li>
+<li>High-performance scientific computing</li>
+</ul>
+<hr>
+<h3 id="awards-and-achievements">Awards and Achievements</h3>
+<ul>
+<li><a href="https://sc22.supercomputing.org/proceedings/sci_viz/sci_viz_pages/svs108.html">Finalist</a> in the <a href="https://sc22.supercomputing.org/program/posters/scientific-visualization-data-analytics-showcase/">Scientific Visualization and Data Analytics Showcase</a> at Supercomputing &lsquo;22 | <a href="https://www.youtube.com/watch?v=JFBsgrrEFro&amp;list=PLyZk_jpQAUzmUG17DBQnrlN2zIyE&amp;index=2">[VIDEO]</a></li>
+<li><a href="https://ctr.stanford.edu/">Center for Turbulence Research</a> Postdoctoral Fellowship, Stanford University</li>
+<li><a href="https://www.fondation-hadamard.fr/en/our-programs/transversal-programs/postdoc-fellowships/thematic-post-docs/">Fondation Mathématique Jacques Hadamard (FMJH)</a> Postdoctoral Fellowship, CentraleSupélec, Paris</li>
+<li><a href="https://www.grad-college.iastate.edu/academics/awards/rex/">Research Excellence Award</a>, Iowa State University</li>
+<li><a href="https://www.grad-college.iastate.edu/academics/awards/tex/">Teaching Excellence Award</a>, Iowa State University</li>
+<li>Dean&rsquo;s Fellowship, College of Engineering, Iowa State University</li>
+<li>Bal G. Joshi Endowment Award for innovative thinking and performance</li>
+<li>First place, Chemtech Poster Competition</li>
+<li>International Travel Grant, Department of Science and Technology, India (iTi 2014 Conference on Turbulence)</li>
+</ul>
+
+      </div>
+    </article>
+  
+
+      </main>
+      <section id="site-sidebar">
+  
+
+  
+
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+
+
+        <li><a href="//github.com/makrandak" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+<li><a href="//bitbucket.com/makrandak" target="_blank" rel="noopener" title="Bitbucket" class="fab fa-bitbucket"></a></li>
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/makrandkhanwale" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=ai7GTW8AAAAJ%26hl%3den" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0002-8809-6320" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+<li><a href="//researchgate.net/profile/Makrand_Khanwale3" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+<li><a href="mailto:makrand.khanwale@tum.de" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    © 2026 Makrand Khanwale
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.68.3' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.5955090a3253deadcd66071270aa2274dabe15ffc97094cec252d87b6f3f00bf.js" integrity="sha256-WVUJCjJT3q3NZgcScKoidNq&#43;Ff/JcJTOwlLYe28/AL8="></script>
+    <script src="/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-4B4L5S7149', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    </div>
+  </body>
+</html>
