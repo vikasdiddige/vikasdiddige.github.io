@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected computational mechanics and CAE projects by Dr.-Ing. Vikas Diddige.">
+  <title>Projects | Dr.-Ing. Vikas Diddige</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap header">
+    <a class="identity" href="index.html">Dr.-Ing. Vikas Diddige</a>
+    <nav aria-label="Main navigation">
+      <a href="work.html" aria-current="page">Projects</a><a href="experience.html">Experience</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="publications.html">Publications &amp; Talks</a><a href="achievements.html">Achievements</a><a href="teaching.html">Teaching &amp; Supervision</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section wrap page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected projects</p>
+        <h1>From material behavior<br><span>to structural response.</span></h1>
+        <p class="section-subheading">Research and product-development projects in computational mechanics, material modeling, and CAE.</p>
+      </div>
+
+      <div class="projects-stack">
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Personal programming project · TU Bergakademie Freiberg · 2020</p>
+            <h2>Isogeometric analysis: an end-to-end Python workflow</h2>
+            <p>Developed a Python implementation of isogeometric analysis (IGA) for two-dimensional linear-elastic and coupled piezoelectric problems.</p>
+            <ul class="project-highlights">
+              <li><strong>NURBS geometry:</strong> Created two-dimensional NURBS geometries directly from control points, knot vectors, weights, and basis functions.</li>
+              <li><strong>Analysis setup:</strong> Implemented knot-vector and control-point connectivity, boundary conditions, mechanical loads, and coupled electrical degrees of freedom.</li>
+              <li><strong>Solution procedure:</strong> Formulated and assembled the IGA stiffness matrix and force vector, including numerical integration and mappings between master, parametric, and physical spaces.</li>
+              <li><strong>Python post-processing:</strong> Visualized deformed geometries and generated contour plots for displacement, reaction-force, and electrical-potential fields.</li>
+              <li><strong>Verification:</strong> Compared mechanical and electromechanical results with Abaqus piezoelectric elements.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Isogeometric analysis</li><li>NURBS</li><li>Python</li><li>NumPy</li><li>Matplotlib</li><li>Abaqus verification</li><li>Piezoelectricity</li></ul>
+          </aside>
+        </article>
+        <article class="project-panel featured">
+          <div>
+            <p class="project-type">Master’s thesis · Porsche AG · 2021</p>
+            <h2>Temperature-dependent visco-plastic model for crash simulation</h2>
+            <p>Developed a temperature-dependent hypoelastic-plastic model with damage for SABIC polypropylene copolymer used in vehicle crash applications.</p>
+            <ul class="project-highlights">
+              <li><strong>Constitutive modeling:</strong> Extended a TAPO-based framework with a modified hardening law, temperature-dependent Young’s modulus, and a Johnson–Cook thermal-softening formulation.</li>
+              <li><strong>Temperature-dependent damage:</strong> Adapted the Johnson–Cook damage formulation using homologous temperature to capture temperature-sensitive damage and failure.</li>
+              <li><strong>Calibration and validation:</strong> Calibrated and validated against tension, shear, compression, puncture, and three-point bending tests across three temperatures.</li>
+              <li><strong>Component validation:</strong> Assessed predictive performance for a Taycan air-guide component.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>LS-DYNA Explicit</li><li>UMAT</li><li>Fortran</li><li>LS-OPT</li><li>ANSA</li><li>LS-PrePost</li></ul>
+            <p class="implementation-note"><strong>LS-DYNA Explicit implementation:</strong> The complete temperature-dependent constitutive and damage model was implemented as an LS-DYNA user-material routine for explicit dynamic analysis.</p>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Doctoral research · TU Bergakademie Freiberg · 2022–2026</p>
+            <h2>Mixed finite-element modeling of hydrogen-promoted fracture</h2>
+            <p>Developed a predictive phase-field chemo-mechanical framework for hydrogen-promoted fracture in metallic materials, with stress-assisted diffusion and hydrogen-dependent fracture resistance.</p>
+            <ul class="project-highlights">
+              <li><strong>Mixed FE formulation:</strong> Formulated a mixed rate-type variational problem that treats hydrogen concentration (lattice occupancy) and chemical potential as dual fields alongside displacement and the fracture phase-field.</li>
+              <li><strong>Chemical-potential field:</strong> Used chemical potential as the field governing hydrogen flux, enabling chemical-equilibrium boundary conditions at hydrogen-exposed surfaces without ad hoc concentration criteria.</li>
+              <li><strong>Numerical advantage:</strong> Avoided the need for C1-continuous displacement elements and hydrostatic-stress extrapolation that arise in concentration-based diffusion formulations.</li>
+              <li><strong>Modular implementation:</strong> Structured the formulation so that constitutive relations can be exchanged or adapted efficiently for different materials.</li>
+              <li><strong>Computational efficiency:</strong> The rate-variational formulation yields a symmetric tangent matrix, allowing symmetric solvers to be employed for efficient numerical solution.</li>
+              <li><strong>Implementation and verification:</strong> Implemented the model in an Abaqus UEL and verified it through benchmark examples, including hydrostatic-stress-dependent concentration evolution and sub-critical crack growth under sustained loading.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Mixed FE formulation</li><li>Hydrogen concentration</li><li>Chemical potential</li><li>Phase-field fracture</li><li>Chemo-mechanics</li><li>Abaqus UEL</li><li>Fortran</li><li>Python</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Industrial research collaboration · Sunfire GmbH · 2022–2023</p>
+            <h2>High-temperature structural integrity of electrolyzer components</h2>
+            <p>Evaluated thermomechanical loading and structural integrity questions for high-temperature electrolyzer components.</p>
+            <ul class="project-highlights">
+              <li><strong>Thermomechanical analysis:</strong> Studied the influence of operating temperatures and thermal cycles on component response.</li>
+              <li><strong>Material behavior:</strong> Considered high-temperature strength and creep effects in the structural assessment.</li>
+              <li><strong>Engineering relevance:</strong> Connected simulation results to design decisions for product development.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>COMSOL</li><li>Thermo-mechanics</li><li>Creep</li><li>Structural integrity</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Personal programming project · TU Bergakademie Freiberg · 2019–2020</p>
+            <h2>Fundamentals of machine learning and neural networks</h2>
+            <p>Built foundational machine-learning implementations in Python to develop a practical understanding of regression, classification, and neural-network methods.</p>
+            <ul class="project-highlights">
+              <li><strong>Regression:</strong> Implemented polynomial-regression algorithms for numerical data fitting.</li>
+              <li><strong>Classification:</strong> Developed an Iris-dataset classification workflow and evaluated its predictions.</li>
+              <li><strong>Neural networks:</strong> Programmed a two-layer neural network from scratch using ReLU and sigmoid activation functions.</li>
+              <li><strong>Framework implementation:</strong> Applied TensorFlow and Keras to implement and compare the learning workflows.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Python</li><li>Machine learning</li><li>Neural networks</li><li>Regression</li><li>Classification</li><li>TensorFlow</li><li>Keras</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Product development · Tata Engineering Services / General Motors · 2015–2017</p>
+            <h2>Crash and pothole simulation of automotive components</h2>
+            <p>Performed component- and assembly-level finite-element simulations to assess the structural response of automotive electrical brackets, sheet-metal parts, and battery-module assemblies.</p>
+            <ul class="project-highlights">
+              <li><strong>Simulation models:</strong> Prepared two-dimensional sheet-metal and three-dimensional hexahedral finite-element models, including material definitions, contacts, and tie constraints.</li>
+              <li><strong>Crash and pothole loading:</strong> Analyzed dynamic structural response under crash and pothole load cases to assess stress, deformation, critical load paths, and potential failure-sensitive regions.</li>
+              <li><strong>Engineering decisions:</strong> Interpreted simulation results and provided design feedback to improve strength and robustness under demanding vehicle loads.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Abaqus</li><li>HyperMesh</li><li>ANSA</li><li>HyperView</li><li>Dynamic analysis</li><li>Crash simulation</li><li>Pothole loading</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Product development · Tata Engineering Services / General Motors · 2015–2017</p>
+            <h2>Random-vibration and fatigue analysis of automotive components</h2>
+            <p>Assessed vibration durability of automotive electrical-component assemblies through steady-state dynamics and power spectral density (PSD)-based fatigue analysis.</p>
+            <ul class="project-highlights">
+              <li><strong>Dynamic response:</strong> Performed steady-state dynamic analyses in Abaqus to evaluate component response under random-vibration loading.</li>
+              <li><strong>Fatigue evaluation:</strong> Used PSD input data in nCode to estimate fatigue life and identify durability-critical regions.</li>
+              <li><strong>Design support:</strong> Interpreted vibration and fatigue results to support durability-driven component design improvements.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Abaqus</li><li>nCode</li><li>Random vibration</li><li>PSD fatigue</li><li>Steady-state dynamics</li><li>Durability</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Product development · Tata Engineering Services / General Motors · 2015–2017</p>
+            <h2>Modal analysis and resonance evaluation of automotive components</h2>
+            <p>Evaluated natural frequencies and mode shapes of automotive component assemblies to identify resonance risk from engine excitation.</p>
+            <ul class="project-highlights">
+              <li><strong>Model preparation:</strong> Converted hexahedral finite-element meshes to tetrahedral meshes for frequency-analysis workflows.</li>
+              <li><strong>Modal analysis:</strong> Performed eigenvalue analysis to extract natural frequencies and corresponding mode shapes.</li>
+              <li><strong>Resonance assessment:</strong> Compared modal behavior with engine-vibration frequencies to identify resonance risk and support design decisions.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>OptiStruct</li><li>HyperMesh</li><li>Modal analysis</li><li>Natural frequencies</li><li>Mode shapes</li><li>Resonance evaluation</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Product development · Renault Nissan · 2018</p>
+            <h2>Static structural analysis of full-vehicle and subsystem models</h2>
+            <p>Performed simulation-driven structural assessments for automotive body development using full-vehicle and subsystem finite-element models.</p>
+            <ul class="project-highlights">
+              <li><strong>Static load cases:</strong> Evaluated hook-towing strength, jack-up strength, and body torsional stiffness for full-vehicle applications.</li>
+              <li><strong>Performance assessment:</strong> Assessed strength, stiffness, and durability response against design targets and non-failure criteria.</li>
+              <li><strong>Engineering support:</strong> Identified critical structural regions and supported design modifications to improve load-bearing performance.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>Abaqus</li><li>Static analysis</li><li>Full-vehicle CAE</li><li>Hook towing</li><li>Jack-up strength</li><li>Torsional stiffness</li></ul>
+          </aside>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="project-type">Product development · Tata Engineering Services / General Motors · 2015–2017</p>
+            <h2>Gauge optimization for lightweight automotive components</h2>
+            <p>Optimized sheet-metal thickness distributions to reduce component mass while meeting structural performance requirements.</p>
+            <ul class="project-highlights">
+              <li><strong>Optimization setup:</strong> Defined gauge-optimization studies for automotive electrical sheet-metal components.</li>
+              <li><strong>Performance constraints:</strong> Evaluated strength, stiffness, vibration, and durability requirements while assessing thickness changes.</li>
+              <li><strong>Lightweighting:</strong> Identified weight-reduction opportunities while maintaining required structural performance.</li>
+            </ul>
+          </div>
+          <aside class="project-sidebar">
+            <h3>Methods &amp; tools</h3>
+            <ul class="tags"><li>OptiStruct</li><li>HyperMesh</li><li>Gauge optimization</li><li>Lightweighting</li><li>Sheet metal</li><li>Structural performance</li></ul>
+          </aside>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><span>Dr.-Ing. Vikas Diddige</span><a href="index.html">Home</a></footer>
+</body>
+</html>
